@@ -5,7 +5,9 @@ export function crearCardProducto(producto) {
       <h3>${producto.nombre}</h3>
       <p>${producto.descripcion}</p>
       <p><strong>$${producto.precio}</strong></p>
-      <button onclick="alert('Funcionalidad ver producto')">Ver más</button>
+      <a href="producto.html?id=${producto.id}">
+        <button>Ver más</button>
+      </a>
     </div>
   `;
 }

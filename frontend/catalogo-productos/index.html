@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Catálogo de Productos</title>
-  <link rel="stylesheet" href="css/estilos.css"/>
-</head>
-<body>
-  <header>
-    <h1>Catálogo de Productos</h1>
-    <nav>
-      <a href="login.html">Iniciar sesión</a>
-      <a href="registro.html">Registrarse</a>
-      <a href="publicar.html">Publicar producto</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo de Productos</title>
+    <link rel="stylesheet" href="../css/estilos.css" />
+  </head>
 
-  <main id="contenedor-productos">
-    <!-- Aquí se insertan los productos dinámicamente -->
-  </main>
+  <body>
+    <header>
+      <h1>Catálogo de Productos</h1>
+      <nav>
+        <a href="login.html">Iniciar sesión</a>
+        <a href="registro.html">Registrarse</a>
+        <a href="publicar.html">Publicar producto</a>
+      </nav>
+    </header>
 
-  <script type="module" src="js/main.js"></script>
-</body>
+    <main>
+      <section style="padding: 1rem; text-align: center">
+        <label for="filtro-categoria"
+          ><strong>Filtrar por categoría:</strong></label
+        >
+        <select id="filtro-categoria">
+          <option value="todos">Todos</option>
+          <option value="Tecnología">Tecnología</option>
+          <option value="Hogar">Hogar</option>
+          <option value="Ropa">Ropa</option>
+          <option value="Deportes">Deportes</option>
+        </select>
+      </section>
+
+      <section id="contenedor-productos">
+        <!-- Aquí se insertan los productos -->
+      </section>
+    </main>
+
+    <script type="module" src="../js/main.js"></script>
+  </body>
 </html>

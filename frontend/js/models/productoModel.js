@@ -5,7 +5,8 @@ export const productos = [
     descripcion: "Laptop usada, buen estado",
     precio: 350,
     imagen: "assets/img/laptop.jpg",
-    categoria: "Tecnología"
+    categoria: "Tecnología",
+    estado: "disponible"
   },
   {
     id: 2,
@@ -13,6 +14,7 @@ export const productos = [
     descripcion: "Ideal para paseos al aire libre",
     precio: 120,
     imagen: "assets/img/bicicleta.jpg",
-    categoria: "Deportes"
+    categoria: "Deportes",
+    estado: "vendido"
   }
 ];
